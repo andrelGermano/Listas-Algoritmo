@@ -1,5 +1,5 @@
-/*Elabore um algoritmo que leia um vetor A de 10 elementos e construa um vetor P formado pelos Ìndices dos
-elementos pares de A. Exemplo: Se A = [1 3 6 7 8], seus elementos pares est„o nos Ìndices 2 e 4 . Assim, P
+/*Elabore um algoritmo que leia um vetor A de 10 elementos e construa um vetor P formado pelos √≠ndices dos
+elementos pares de A. Exemplo: Se A = [1 3 6 7 8], seus elementos pares est√£o nos √≠ndices 2 e 4 . Assim, P
 = [2 4]. */
 #include <iostream>
 using namespace std;
