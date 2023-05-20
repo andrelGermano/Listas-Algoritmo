@@ -1,5 +1,5 @@
-/*Elabore um algoritmo que leia um vetor A de 20 posições. Em seguida, trocar (armazenando em um novo 
-vetor B) o primeiro elemento com o último, o segundo com o penúltimo, o terceiro com o antepenúltimo, e 
+/*Elabore um algoritmo que leia um vetor A de 20 posiÃ§Ãµes. Em seguida, trocar (armazenando em um novo 
+vetor B) o primeiro elemento com o Ãºltimo, o segundo com o penÃºltimo, o terceiro com o antepenÃºltimo, e 
 assim sucessivamente. Ao final, escreva os vetores A e B. */
 
 #include <iostream>
