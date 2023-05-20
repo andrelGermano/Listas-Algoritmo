@@ -1,4 +1,4 @@
-//Elabore um algoritmo que leia um nï¿½mero inteiro e uma letra (ï¿½aï¿½ ï¿½ antecessores ou ï¿½sï¿½ ï¿½ sucessores) e mostre a soma dos seus prï¿½ximos 10 antecessores ou 
+//Elabore um algoritmo que leia um número inteiro e uma letra (“a” – antecessores ou “s” – sucessores) e mostre a soma dos seus próximos 10 antecessores ou 
 //sucessores de acordo com a letra digitada.
 
 #include <iostream>
@@ -15,10 +15,10 @@ int main() {
 	cin >> letra;
 	
 	if(letra == 's'){
-		cout << "A soma dos seus prï¿½ximos 10 sucessores ï¿½ " << (numero + 1) + (numero + 2) + (numero + 3) + (numero + 4) + (numero + 5) + (numero + 6) + (numero + 7) + (numero + 8) + (numero + 9) + (numero + 10);
+		cout << "A soma dos seus próximos 10 sucessores é " << (numero + 1) + (numero + 2) + (numero + 3) + (numero + 4) + (numero + 5) + (numero + 6) + (numero + 7) + (numero + 8) + (numero + 9) + (numero + 10);
 	}else if(letra == 'a'){
-		cout << "A soma dos seus prï¿½ximos 10 antecessores ï¿½ " << (numero - 1) + (numero - 2) + (numero - 3) + (numero - 4) + (numero - 5) + (numero - 6) + (numero - 7) + (numero - 8) + (numero - 9) + (numero - 10);
+		cout << "A soma dos seus próximos 10 antecessores é " << (numero - 1) + (numero - 2) + (numero - 3) + (numero - 4) + (numero - 5) + (numero - 6) + (numero - 7) + (numero - 8) + (numero - 9) + (numero - 10);
 	}else{
-		cout << "Letra digitada ï¿½ invï¿½lida.";
+		cout << "Letra digitada é inválida.";
 	}
 }
