@@ -1,6 +1,6 @@
-/*Elabore um algoritmo que leia um vetor de 15 posiÁıes de n˙meros inteiros e pergunte ao usu·rio quais 
-elementos ele deseja ver: se os elementos que est„o em Ìndices pares ou se os elementos que est„o em 
-Ìndices Ìmpares. Mostre somente os elementos solicitados.*/
+/*Elabore um algoritmo que leia um vetor de 15 posi√ß√µes de n√∫meros inteiros e pergunte ao usu√°rio quais 
+elementos ele deseja ver: se os elementos que est√£o em √≠ndices pares ou se os elementos que est√£o em 
+√≠ndices √≠mpares. Mostre somente os elementos solicitados.*/
 
 #include <iostream>
 using namespace std;
