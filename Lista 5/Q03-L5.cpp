@@ -2,7 +2,7 @@
 a) da linha 4 de M 
 b) da coluna 2 de M 
 c) da diagonal principal 
-d) da diagonal secund·ria 
+d) da diagonal secund√°ria 
 e) de todos os elementos da matriz M 
 1 2 3 4 5
 1 2 3 4 5
@@ -40,5 +40,5 @@ int main(){
 			somDiS=somDiS+m[i][j];
 		}
 	}
-	cout << "\nSoma da linha 4 de M: " << somLi4 << "\nSoma da coluna 2 de M: " << somCo2 << "\nSoma da diagonal principal: " << somDiP << "\nSoma da diagonal secund·ria: " << somDiS << "\nSoma de todos os elementos da matriz M: " << somTot;
+	cout << "\nSoma da linha 4 de M: " << somLi4 << "\nSoma da coluna 2 de M: " << somCo2 << "\nSoma da diagonal principal: " << somDiP << "\nSoma da diagonal secund√°ria: " << somDiS << "\nSoma de todos os elementos da matriz M: " << somTot;
 }
