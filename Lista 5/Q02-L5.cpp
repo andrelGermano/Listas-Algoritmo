@@ -1,5 +1,5 @@
-/*. Escreva um algoritmo que leia um número inteiro A e uma matriz M (30,30) de inteiros. Conte quantos valores 
-da matriz M são iguais a A. Crie, a seguir, uma matriz X contendo todos os elementos de M diferentes de A 
+/*. Escreva um algoritmo que leia um nÃºmero inteiro A e uma matriz M (30,30) de inteiros. Conte quantos valores 
+da matriz M sÃ£o iguais a A. Crie, a seguir, uma matriz X contendo todos os elementos de M diferentes de A 
 (quando for igual a A, insira um 0). Mostre os resultados.*/
 #include <iostream>
 using namespace std;
@@ -17,7 +17,7 @@ int main(){
 			}
 		}
 	}
-	cout << iguais << " valores de M são iguais a 'A'" << endl;
+	cout << iguais << " valores de M sÃ£o iguais a 'A'" << endl;
 	cout << "\nMatriz X: " << endl;;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
