@@ -3,12 +3,7 @@ a) da linha 4 de M
 b) da coluna 2 de M 
 c) da diagonal principal 
 d) da diagonal secundária 
-e) de todos os elementos da matriz M 
-1 2 3 4 5
-1 2 3 4 5
-1 2 3 4 5
-1 2 3 4 5
-1 2 3 4 5 */
+e) de todos os elementos da matriz M  */
 #include <iostream>
 using namespace std;
 int main(){
@@ -34,10 +29,11 @@ int main(){
 				cout << endl;
 		}
 	}
-	for(i=4;i>=0;i--){
-		for(j=0;j<=4;j++){
-			if(j==i)
+	for(i=0;i<=4;i++){
+		for(j=4;j>=0;j--){
+			cout << m[i][j] << " ";
 			somDiS=somDiS+m[i][j];
+			i++;
 		}
 	}
 	cout << "\nSoma da linha 4 de M: " << somLi4 << "\nSoma da coluna 2 de M: " << somCo2 << "\nSoma da diagonal principal: " << somDiP << "\nSoma da diagonal secundária: " << somDiS << "\nSoma de todos os elementos da matriz M: " << somTot;
