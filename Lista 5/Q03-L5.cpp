@@ -29,12 +29,10 @@ int main(){
 				cout << endl;
 		}
 	}
-	for(i=0;i<=4;i++){
-		for(j=4;j>=0;j--){
-			cout << m[i][j] << " ";
-			somDiS=somDiS+m[i][j];
-			i++;
-		}
+	i=0;
+	for(j=4;j>=0;j--){
+		somDiS=somDiS+m[i][j];
+		i++;
 	}
 	cout << "\nSoma da linha 4 de M: " << somLi4 << "\nSoma da coluna 2 de M: " << somCo2 << "\nSoma da diagonal principal: " << somDiP << "\nSoma da diagonal secundária: " << somDiS << "\nSoma de todos os elementos da matriz M: " << somTot;
 }
