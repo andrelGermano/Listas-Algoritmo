@@ -64,14 +64,14 @@ int main(){
 						mostrar[fim]=false;
 					}
 					
-					fim++;
+					fim++; // Quantidade de cadastros já realizados
 					cout << "\n\t\tCADASTRO REALIZADO!";
 				}
 				break;
 			case 2: // Buscar algum(s) produto(s) cadastrado(s)
 				do{
 					cout << "\nPesquisa por TIPO (digite 1) ou por CODIGO (digite 2): "; // Dando opções de busca para o usuario 
-					cin >> opcao;                                                                  //(tipo ou codigo da roupa)
+					cin >> opcao;                                                                  //(tipo ou código da roupa)
 				}while(opcao!=1&&opcao!=2); 
 				switch(opcao){
 					case 1: // Pesquisar por tipo do produto
@@ -100,7 +100,7 @@ int main(){
 						cin >> codigoAux;
 						pode=false;
 						for(i=0;i<fim;i++){ // Procurando a existência do produto com esse código
-							if(codigoAux==roupa[i].codigo)
+							if(codigoAux==roupa[i].codigo){
 								pode=true;
 								cout << "-----------------------------" << endl; // Caso exista, será mostrado o produto com esse código
 								cout << "Codigo: " << roupa[i].codigo << endl;
@@ -109,6 +109,7 @@ int main(){
 								cout << "Preco: " << roupa[i].preco.varejo << endl;
 								if(mostrar[i]==true)
 									cout << "Codigo do produto: " << roupa[i].preco.atacado << endl; 
+							}
 						}
 						if(!pode){ 
 							cout << "\nCodigo nao cadastrado no sistema."; // Caso não exista, essa mensagem será mostrada
@@ -124,6 +125,7 @@ int main(){
 						achou=true; // Caso seja encontrado, a flag será verdadeira e 
 						aux2=i; // o valor de 'i' será guardado para alteração dos dados referentes a 'i'
 					}
+				}
 					if(achou){ // Código foi encontrado, possibilitando alterações no cadastro do produto
 					
 						cout << endl << "\t-----------------------------" << endl;          // Dados sendo mostrados para melhor
@@ -131,7 +133,7 @@ int main(){
 						cout << "\tTipo: " << roupa[aux2].tipo << endl;                // algum dado
 						cout << "\tTamanho: " << roupa[aux2].tamanho << endl;
 						cout << "\tPreco do produto: " << roupa[aux2].preco.varejo << endl;
-						if(mostrar[i]==true)
+						if(mostrar[aux2]==true)
 							cout << "\tPreco de Atacado do produto: " << roupa[aux2].preco.atacado << endl; 
 						cout << "\t-----------------------------" << endl;
 							
@@ -178,9 +180,47 @@ int main(){
 						break;
 					}else if(!achou)
 						cout << "\n\tCodigo invalido.";
-				}
 				break;
-			case 4:
+			case 4: // Excluir algum cadastro por completo.
+				cout << "\n\t\tEXCLUSAO..." << endl;
+				cout << "\n\n\tDigite o codigo do produto que deseja excluir: ";
+				cin >> aux;
+				achou=false; 
+				for(i=0;i<=fim;i++){ // Procurando o código no sistema
+					if(aux==roupa[i].codigo){
+						achou=true; // Caso seja encontrado, a flag será verdadeira e 
+						aux2=i; // o valor de 'i' será guardado para alteração dos dados referentes a 'i'
+					}
+				}
+				if(achou){ // Código foi encontrado, possibilitando a exclusão do cadastro do produto
+					
+						cout << endl << "\t-----------------------------" << endl;          // Dados sendo mostrados para melhor
+						cout << "\tCodigo do produto: " << roupa[aux2].codigo << endl; // entendimento do usuário ao excluir
+						cout << "\tTipo: " << roupa[aux2].tipo << endl;                // o cadastro
+						cout << "\tTamanho: " << roupa[aux2].tamanho << endl;
+						cout << "\tPreco do produto: " << roupa[aux2].preco.varejo << endl;
+						if(mostrar[i]==true)
+							cout << "\tPreco de Atacado do produto: " << roupa[aux2].preco.atacado << endl; 
+						cout << "\t-----------------------------" << endl;
+						
+						do{
+							cout << "\n\n Tem certeza que deseja excluir o cadastro? (1 - Sim / 2 - Nao): ";
+							cin >> opcao;
+						}while(opcao!=1&&opcao!=2);
+						
+						if(opcao==1){
+							roupa[aux2].codigo = roupa[aux2+1].codigo;
+							roupa[aux2].tipo = roupa[aux2+1].tipo;             
+							roupa[aux2].tamanho = roupa[aux2+1].tamanho;
+							roupa[aux2].preco.varejo = roupa[aux2+1].preco.varejo;
+							if(mostrar[aux2]==true)
+								roupa[aux2].preco.atacado = roupa[aux2+1].preco.atacado;
+							fim--;
+							cout << "\n\t\tEXCLUSAO REALIZADA!";
+						}
+						break;
+					}else if(!achou)
+						cout << "\n\tCodigo invalido.";
 				break;
 			case 5:
 				cout << "\n\nCADASTROS EXISTENTES: " << endl;
