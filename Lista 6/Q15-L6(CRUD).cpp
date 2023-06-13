@@ -120,7 +120,7 @@ int main(){
 				cout << "\n\n\tDigite o codigo do produto que deseja alterar: ";
 				cin >> aux;
 				achou=false; 
-				for(i=0;i<=fim;i++){ // Procurando o código no sistema
+				for(i=0;i<fim;i++){ // Procurando o código no sistema
 					if(aux==roupa[i].codigo){
 						achou=true; // Caso seja encontrado, a flag será verdadeira e 
 						aux2=i; // o valor de 'i' será guardado para alteração dos dados referentes a 'i'
