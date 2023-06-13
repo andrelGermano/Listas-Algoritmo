@@ -1,4 +1,4 @@
-/*3.  Altere o exercício anterior para cadastrar no máximo 20 clientes. Ao final do cadastro de cada 
+/*4.  Altere o exercício anterior para cadastrar no máximo 20 clientes. Ao final do cadastro de cada 
 cliente deverá ser perguntado: "Novo Cliente (S/N)?". Caso o usuário escolha “N” ou chegar 
 nos 20 clientes, o programa deve mostrar um relatório de todos os clientes cadastrados e 
 finalizar. OBS: Deve-se utilizar um vetor de registros na solução. */
